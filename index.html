@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Translate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Text to Speech Translate</h1>
+        </header>
+        <main>
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            </div>
+            <div class="ranges">
+                <i class="fa-solid fa-volume-low" id="fa-volume-low"></i>
+                <i class="fa-solid fa-volume-high" id="fa-volume-high"></i>
+                <input type="range" min="0" max="1" step="0.001" value="1" id="volumeSlider" class="slider">
+            </div>
+            <button id="speakButton">Speak</button>
+            <div id="outputSection" class="output-section">
+                <p id="outputText"></p>
+            </div>
+        </main>
+        <footer>
+            <p>&commat; Deenadhayalan S</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
